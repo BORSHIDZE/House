@@ -1,0 +1,61 @@
+body {
+  background-color: #fff;
+  @extend %lexend400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 5px 10px;
+  margin: 0 auto;
+}
+
+
+
+.menu {
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    @extend %lexend600;
+    color: #BDBDBD;
+    font-size: 16px;
+    line-height: 18px;
+    transition: all .3s;
+
+    &:hover {
+      @extend %poppins700;
+      color: #828282;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+
+
+.button {
+  background-color: #F2994A;
+  padding: 12px 24px;
+  color: #fff;
+  @extend %lexend600;
+  border-radius: 32px;
+  border: 2px solid transparent;
+  transition: all .3s;
+
+  &:hover {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #F2994A;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
